@@ -19,3 +19,6 @@ var Employee = { name: "thierry", age: 21, jobTitle: "developer" };
 console.log(Employee);
 var AdminUser = { isAdmin: true, name: "thierry" };
 console.log(AdminUser);
+string = "1" | "2" | "3";
+var Name = "1";
+console.log(Name);

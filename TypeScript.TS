@@ -29,6 +29,21 @@ console.log(Status);
 
 
 
+let myName : string 
+| number = "thierry";
+console.log(myName);
+
+
+
+let string = "1" | "2" | "3";
+let Name: string = "1";
+console.log(Name);
+
+
+
+
+
+
 interface Person { name: string ; age: number ;}
 let Person: Person = { name: "thierry", age: 21 };
 console.log(Person);
@@ -45,3 +60,15 @@ type user = { name: string };
 type AdminUser = Admin & user;
 let AdminUser: AdminUser = { isAdmin: true, name: "thierry" };
 console.log(AdminUser);
+
+
+export default function navBar (){
+
+    const = [open, setOpen] = useState(0);
+    const links
+
+}
+
+
+
+
