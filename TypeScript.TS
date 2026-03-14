@@ -65,10 +65,43 @@ console.log(AdminUser);
 export default function navBar (){
 
     const = [open, setOpen] = useState(0);
-    const links
+    
 
 }
 
 
 
+function addNumbers(a: number, b: number): number {
+  return a + b;
+}
 
+let result = addNumbers(5, 3);
+
+console.log(result);
+
+
+
+let userId: string | number;
+
+userId = 101;
+console.log(userId);
+
+userId = "A45";
+console.log(userId);
+
+
+let age: number = 20;
+
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+
+
+function greet(name?: string) {
+  console.log("Hello " + name);
+}
+
+greet("Sam");
+greet();
