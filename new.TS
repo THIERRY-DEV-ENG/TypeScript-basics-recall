@@ -51,3 +51,19 @@ captureBtn.addEventListener("click", () => {
 });
 
 startCamera();
+
+
+function getNumber(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(10);
+    }, 2000);
+  });
+}
+
+async function printNumber() {
+  const result = await getNumber();
+  console.log(result);
+}
+
+printNumber();
