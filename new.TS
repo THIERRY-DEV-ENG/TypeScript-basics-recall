@@ -67,3 +67,32 @@ async function printNumber() {
 }
 
 printNumber();
+
+
+
+interface Particpant { id: number; name: string;}
+interface Staff { id: number; role: string;}
+
+type UserType= Particpant | Staff | null;
+
+
+function getLocation(): void {
+  if (!navigator.geolocation) {
+    console.log("Geolocation is not supported by your browser");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    },
+    (error) => {
+      console.error("Error getting location:", error.message);
+    }
+  );
+}
+
+getLocation();

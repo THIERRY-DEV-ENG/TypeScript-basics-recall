@@ -85,3 +85,27 @@ captureBtn.addEventListener("click", function () {
     }
 });
 startCamera();
+function getNumber() {
+    return new Promise(function (resolve) {
+        setTimeout(function () {
+            resolve(10);
+        }, 2000);
+    });
+}
+function printNumber() {
+    return __awaiter(this, void 0, void 0, function () {
+        var result;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, getNumber()];
+                case 1:
+                    result = _a.sent();
+                    console.log(result);
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+printNumber();
+var user = { id: 1, name: "thierry" };
+console.log(user);
