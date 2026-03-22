@@ -122,11 +122,13 @@ function mergeArrays(arr1, arr2) {
 }
 
 
-/*************  ✨ Windsurf Command ⭐  *************/
-/**
- * Logs the result
-/*******  28c91d0b-7283-473e-968d-6ac945d028f5  *******/
 function addNumber(a,b){
     console.log(a+b);
 }
 addNumber(5,6);
+
+
+function multiplyNumber(a,b){   
+    console.log(a*b);
+}
+multiplyNumber(5,7);
