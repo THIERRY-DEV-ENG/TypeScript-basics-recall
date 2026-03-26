@@ -10,6 +10,19 @@
     <button id="btn">Click Me</button>
     <p id="demo"></p>
 
+
+    <input id="name" placeholder="Enter name">
+<button id="btn">Show</button>
+<p id="output"></p>
+
+<script>
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function() {
+    let name = document.getElementById("name").value;
+    document.getElementById("output").textContent = name;
+});
+</script>
     <script>
         const myBtn = document.getElementById("btn");
         const myInput = document.getElementById("input");
