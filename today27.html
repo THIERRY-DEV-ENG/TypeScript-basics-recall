@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="input" placeholder="Enter your FullName">
+<button id="btn1">Click Me</button>
+<p id="demo"></p>
+
+<input id="name" placeholder="Enter name">
+<button id="btn2">Show</button>
+<p id="output"></p>
+
+<script>
+const btn1 = document.getElementById("btn1");
+const input = document.getElementById("input");
+const demo = document.getElementById("demo");
+
+btn1.addEventListener("click", function() {
+    demo.textContent = input.value;
+});
+
+const btn2 = document.getElementById("btn2");
+const nameInput = document.getElementById("name");
+const output = document.getElementById("output");
+
+btn2.addEventListener("click", function() {
+    output.textContent = nameInput.value;
+});
+
+
+
+
+btn2.addEventListener("Click", function (){
+    alert("Hello " + nameInput.value);
+})
+</script>
+
+</body>
+</html>
