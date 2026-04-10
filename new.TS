@@ -96,3 +96,13 @@ function getLocation(): void {
 }
 
 getLocation();
+
+type User = {
+  id: number;
+  name: string;
+  isAdmin: boolean;
+};
+
+function promoteUser(user: User) {
+  user.isAdmin = true;
+}
